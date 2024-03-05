@@ -1,0 +1,14 @@
+<odoo>
+    <data>
+        <record id="merge_notification_mail_template" model="mail.template">
+            <field name="name">Merge Sale Order Line</field>
+            <field name="subject">Merge Sale Order Line</field>
+            <field name="model_id" ref="ramiz_29022024.model_sale_order"/>
+            <field name="email_from">{{object.user_id.email}}</field>
+            <field name="email_to">{{ object.partner_id.email }}</field>
+            <field name="body_html" type="html">
+                <h1>Merge Notification Mail</h1>
+            </field>
+        </record>
+    </data>
+</odoo>

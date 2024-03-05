@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+ramiz_29022024.access_quotation_bulk_upload,access_quotation_bulk_upload,ramiz_29022024.model_quotation_bulk_upload,base.group_user,1,1,1,1
+ramiz_29022024.access_bulk_upload,access_bulk_upload,ramiz_29022024.model_bulk_upload,base.group_user,1,1,1,1
