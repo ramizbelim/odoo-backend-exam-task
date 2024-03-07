@@ -6,7 +6,7 @@ from odoo.exceptions import ValidationError
 class QuotationBulkUpload(models.TransientModel):
     _name = 'quotation.bulk.upload'
 
-    product_bulk_ids = fields.Many2many('bulk.upload', string="Product")
+    product_bulk_ids = fields.One2many('bulk.upload','bulk_product_id', string="Product")
 
 
     @api.constrains('product_bulk_ids.quantity')

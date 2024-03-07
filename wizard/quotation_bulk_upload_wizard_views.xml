@@ -8,12 +8,10 @@
                 <form>
                     <sheet>
                         <field name="product_bulk_ids" string="Product">
-                            <tree editable="top">
-                                <field name="product_ids" string="Product" widget="many2many_tags" required="True"/>
+                            <tree editable="bottom">
+                                <field name="product_ids" string="Product" widget="many2many_tags" required="True"
+                                context="{'check_condition' : True}"/>
                                 <field name="quantity"/>
-                                <control>
-                                    <create string="Add a Product"/>
-                                </control>
                             </tree>
                         </field>
                     </sheet>
